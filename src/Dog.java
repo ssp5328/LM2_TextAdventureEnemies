@@ -1,5 +1,6 @@
 public class Dog extends Enemy {
     public Dog () {
-        super ("Dog", 20, 15);
+        super ("Dog", 20, 15, 45);
     }
+
 }

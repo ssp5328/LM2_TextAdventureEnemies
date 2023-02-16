@@ -5,10 +5,13 @@ public class Enemy {
 
     protected int damage;
 
-    public Enemy (String name, int hp, int damage) {
+    protected int speed;
+
+    public Enemy (String name, int hp, int damage, int speed) {
         this.name = name;
         this.hp = hp;
         this.damage = damage;
+        this.speed = speed;
 
     }
 
@@ -17,6 +20,6 @@ public class Enemy {
     }
 
     public String toString() {
-        return String.format("%s \n=====\n Health points: %d \n Damage: %d \n", this.name, this.hp, this.damage);
+        return String.format("%s \n=====\n Health points: %d \n Damage: %d \n Speed: %d \n", this.name, this.hp, this.damage, this.speed);
     }
 }
